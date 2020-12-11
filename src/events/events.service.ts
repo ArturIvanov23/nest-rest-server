@@ -12,7 +12,7 @@ export class EventsService {
     @InjectModel(Events.name) private eventsModel: Model<EventsDocument>,
   ) {}
 
-  async getAll(): Promise<Events[]> {
+  async getEvents(): Promise<Events[]> {
     await NestFactory.create(AppModule, { cors: false });
     return this.eventsModel.find().exec();
   }

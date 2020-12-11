@@ -4,7 +4,7 @@ import { EventsService } from '../events.service';
 export class searchThemeController {
   constructor(private readonly eventService: EventsService) {}
   @Get()
-  getHello() {
-    return this.eventService.getAll();
+  searchEvent() {
+    return this.eventService.getEvents();
   }
 }

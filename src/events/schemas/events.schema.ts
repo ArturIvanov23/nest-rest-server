@@ -21,9 +21,6 @@ export class Events {
   text: string;
 
   @Prop()
-  file: any;
-
-  @Prop()
   date: string;
 }
 
